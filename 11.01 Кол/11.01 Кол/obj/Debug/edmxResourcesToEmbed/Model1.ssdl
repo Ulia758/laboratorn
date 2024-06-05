@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dolgnosty">
+    <Key>
+      <PropertyRef Name="id_dolgnost" />
+    </Key>
+    <Property Name="id_dolgnost" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="oklad" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="obyazannosti" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Oplata">
+    <Key>
+      <PropertyRef Name="id_oplati" />
+    </Key>
+    <Property Name="id_oplati" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_naznachenia" Type="int" Nullable="false" />
+    <Property Name="id_poochreniya" Type="int" Nullable="false" />
+    <Property Name="data" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Poochreniya">
+    <Key>
+      <PropertyRef Name="id_poochreniya" />
+    </Key>
+    <Property Name="id_poochreniya" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="procent_ot_oklada" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sotrudniki">
+    <Key>
+      <PropertyRef Name="id_sotrudnika" />
+    </Key>
+    <Property Name="id_sotrudnika" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Familia" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Otchestvo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="50" />
+    <Property Name="Data_rod" Type="date" Nullable="false" />
+    <Property Name="Number" Type="nvarchar" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="Uchet_inform_o_sotrudnikah">
+    <Key>
+      <PropertyRef Name="id_naznachenia" />
+    </Key>
+    <Property Name="id_naznachenia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_sotrudnika" Type="int" Nullable="false" />
+    <Property Name="id_dolgnost" Type="int" Nullable="false" />
+    <Property Name="data_priema" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Oplata_Poochreniya">
+    <End Role="Poochreniya" Type="Self.Poochreniya" Multiplicity="1" />
+    <End Role="Oplata" Type="Self.Oplata" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Poochreniya">
+        <PropertyRef Name="id_poochreniya" />
+      </Principal>
+      <Dependent Role="Oplata">
+        <PropertyRef Name="id_poochreniya" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Oplata_Uchet_inform_o_sotrudnikah">
+    <End Role="Uchet_inform_o_sotrudnikah" Type="Self.Uchet_inform_o_sotrudnikah" Multiplicity="1" />
+    <End Role="Oplata" Type="Self.Oplata" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uchet_inform_o_sotrudnikah">
+        <PropertyRef Name="id_naznachenia" />
+      </Principal>
+      <Dependent Role="Oplata">
+        <PropertyRef Name="id_naznachenia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uchet_inform_o_sotrudnikah_Dolgnosty">
+    <End Role="Dolgnosty" Type="Self.Dolgnosty" Multiplicity="1" />
+    <End Role="Uchet_inform_o_sotrudnikah" Type="Self.Uchet_inform_o_sotrudnikah" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dolgnosty">
+        <PropertyRef Name="id_dolgnost" />
+      </Principal>
+      <Dependent Role="Uchet_inform_o_sotrudnikah">
+        <PropertyRef Name="id_dolgnost" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Uchet_inform_o_sotrudnikah_Sotrudniki">
+    <End Role="Sotrudniki" Type="Self.Sotrudniki" Multiplicity="1" />
+    <End Role="Uchet_inform_o_sotrudnikah" Type="Self.Uchet_inform_o_sotrudnikah" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sotrudniki">
+        <PropertyRef Name="id_sotrudnika" />
+      </Principal>
+      <Dependent Role="Uchet_inform_o_sotrudnikah">
+        <PropertyRef Name="id_sotrudnika" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="MaxOplata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище ModelContainer">
+    <EntitySet Name="Dolgnosty" EntityType="Self.Dolgnosty" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Oplata" EntityType="Self.Oplata" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Poochreniya" EntityType="Self.Poochreniya" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sotrudniki" EntityType="Self.Sotrudniki" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Uchet_inform_o_sotrudnikah" EntityType="Self.Uchet_inform_o_sotrudnikah" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Oplata_Poochreniya" Association="Self.FK_Oplata_Poochreniya">
+      <End Role="Poochreniya" EntitySet="Poochreniya" />
+      <End Role="Oplata" EntitySet="Oplata" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Oplata_Uchet_inform_o_sotrudnikah" Association="Self.FK_Oplata_Uchet_inform_o_sotrudnikah">
+      <End Role="Uchet_inform_o_sotrudnikah" EntitySet="Uchet_inform_o_sotrudnikah" />
+      <End Role="Oplata" EntitySet="Oplata" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uchet_inform_o_sotrudnikah_Dolgnosty" Association="Self.FK_Uchet_inform_o_sotrudnikah_Dolgnosty">
+      <End Role="Dolgnosty" EntitySet="Dolgnosty" />
+      <End Role="Uchet_inform_o_sotrudnikah" EntitySet="Uchet_inform_o_sotrudnikah" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Uchet_inform_o_sotrudnikah_Sotrudniki" Association="Self.FK_Uchet_inform_o_sotrudnikah_Sotrudniki">
+      <End Role="Sotrudniki" EntitySet="Sotrudniki" />
+      <End Role="Uchet_inform_o_sotrudnikah" EntitySet="Uchet_inform_o_sotrudnikah" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

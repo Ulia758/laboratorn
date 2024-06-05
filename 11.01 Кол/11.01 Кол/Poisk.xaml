@@ -1,0 +1,188 @@
+﻿<Page x:Class="_11._01_Кол.Poisk"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_11._01_Кол"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Poisk">
+
+    <TabControl x:Name="vybork" Background="#FFE1E4F9">
+        <TabItem x:Name="z1">
+            <TabItem.Header >
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Height="10" Width="10" Fill="Black" />
+                    <TextBlock Margin="3">Сотрудники, их должности и обязанности</TextBlock>
+                </StackPanel>
+            </TabItem.Header>
+            <TabItem.Content>
+                <StackPanel>
+                    <DataGrid Loaded="p1_Loaded" Margin="10" x:Name="p1" HorizontalContentAlignment="Stretch" AutoGenerateColumns="False" IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Фамилия" Binding="{Binding Sotrudniki.Familia}"/>
+                            <DataGridTextColumn Header="Имя" Binding="{Binding Sotrudniki.Name}"/>
+                            <DataGridTextColumn Header="Отчество" Binding="{Binding Sotrudniki.Otchestvo}"/>
+                            <DataGridTextColumn Header="Адрес" Binding="{Binding Sotrudniki.Adress}"/>
+                            <DataGridTextColumn Header="Дата рождения" Binding="{Binding Sotrudniki.Data_rod, StringFormat=\{0:dd.MM.yyyy\}}"/>
+                            <DataGridTextColumn Header="Должность" Binding="{Binding Dolgnosty.nazvanie}"/>
+                            <DataGridTextColumn Header="Оклад" Binding="{Binding Dolgnosty.oklad}"/>
+                            <DataGridTextColumn Header="Обязанности" Binding="{Binding Dolgnosty.obyazannosti}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1">
+                        <Button x:Name="Back1" Content="Назад" Margin="5" Height="30" Width="150" Background="#FFF4F6FF"  Foreground="#DD000000" BorderBrush="#FF9FA0EA" Click="Back1_Click" />
+                    </StackPanel>
+                </StackPanel>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem x:Name="z2">
+            <TabItem.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Height="10" Width="10" Fill="Black" />
+                    <TextBlock Margin="3">Сотрудники с указанной должностью</TextBlock>
+                </StackPanel>
+            </TabItem.Header>
+            <TabItem.Content>
+                <StackPanel >
+                    <TextBlock Text="Выберите нужную должность" FontSize="15" FontWeight="Regular" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="1"/>
+                    <ComboBox x:Name="combobox1" IsReadOnly="True">
+                        <ComboBoxItem>Управляющий</ComboBoxItem>
+                        <ComboBoxItem>Помощник управляющего</ComboBoxItem>
+                        <ComboBoxItem>Продавец на полный рабочий день</ComboBoxItem>
+                        <ComboBoxItem>Продавец на неполный рабочий день</ComboBoxItem>
+                    </ComboBox>
+                    <DataGrid x:Name="p2" Margin="10" AutoGenerateColumns="False" IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Фамилия" Binding="{Binding Sotrudniki.Familia}"/>
+                            <DataGridTextColumn Header="Имя" Binding="{Binding Sotrudniki.Name}"/>
+                            <DataGridTextColumn Header="Отчество" Binding="{Binding Sotrudniki.Otchestvo}"/>
+                            <DataGridTextColumn Header="Должность" Binding="{Binding Dolgnosty.nazvanie}"/>
+                            <DataGridTextColumn Header="Оклад" Binding="{Binding Dolgnosty.oklad}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1">
+                        <Button x:Name="Find" Content="Найти" Margin="5" Height="30" Width="150" Background="#FFF4F6FF" Foreground="#DD000000" BorderBrush="#FF9FA0EA" Click="Find_Click"  />
+                        <Button x:Name="Back2" Content="Назад" Margin="5" Height="30" Width="150" Background="#FFF4F6FF" Foreground="#DD000000" BorderBrush="#FF9FA0EA" Click="Back2_Click" />
+                    </StackPanel>
+                </StackPanel>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem x:Name="z3">
+            <TabItem.Header >
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Height="10" Width="10" Fill="Black" />
+                    <TextBlock Margin="3">Должности без указания обязанностей</TextBlock>
+                </StackPanel>
+            </TabItem.Header>
+            <TabItem.Content>
+                <StackPanel>
+                    <DataGrid x:Name="p3" Loaded="p3_Loaded" Margin="10" HorizontalContentAlignment="Stretch" AutoGenerateColumns="False" IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Должность" Binding="{Binding nazvanie}"/>
+                            <DataGridTextColumn Header="Оклад" Binding="{Binding oklad}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1">
+                        <Button x:Name="Back3" Content="Назад" Margin="5" Height="30" Width="150" Background="#FFF4F6FF"  Foreground="#DD000000" BorderBrush="#FF9FA0EA" Click="Back1_Click" />
+                    </StackPanel>
+                </StackPanel>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem x:Name="z4">
+            <TabItem.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Height="10" Width="10" Fill="Black"/>
+                    <TextBlock Margin="3">Телефоны сотрудников</TextBlock>
+                </StackPanel>
+            </TabItem.Header>
+            <TabItem.Content>
+                <StackPanel>
+                    <DataGrid x:Name="p4" Loaded="p4_Loaded" AutoGenerateColumns="False" IsReadOnly="True" Margin="10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Фамилия" Binding="{Binding Familia}"/>
+                            <DataGridTextColumn Header="Номер телефона" Binding="{Binding Number}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1">
+                       
+                        <Button x:Name="Back4" Content="Назад" Margin="5" Height="30" Width="150" Background="#FFF4F6FF" Foreground="#DD000000" BorderBrush="#FF9FA0EA" Click="Back4_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem x:Name="z5">
+            <TabItem.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Height="10" Width="10" Fill="Black" />
+                    <TextBlock Margin="3">Максимальный оклад указанного сотрудника</TextBlock>
+                </StackPanel>
+            </TabItem.Header>
+            <TabItem.Content>
+                <StackPanel>
+                    <TextBlock Text="Выберите id сотрудника" FontSize="15" FontWeight="Regular" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="1"/>
+                    <StackPanel>
+                        <ComboBox x:Name="p554" IsReadOnly="True" >
+                            <ComboBoxItem>1</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>3</ComboBoxItem>
+                            <ComboBoxItem>4</ComboBoxItem>
+                            <ComboBoxItem>5</ComboBoxItem>
+                            <ComboBoxItem>6</ComboBoxItem>
+                        </ComboBox>
+                        <DataGrid x:Name="p5" AutoGenerateColumns="False" Margin="10" IsReadOnly="True" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Id сотрудника" Binding="{Binding Sotrudniki.id_sotrudnika}"/>
+                                <DataGridTextColumn Header="Фамилия" Binding="{Binding Sotrudniki.Familia}"/>
+                                <DataGridTextColumn Header="Имя" Binding="{Binding Sotrudniki.Name}"/>
+                                <DataGridTextColumn Header="Отчество" Binding="{Binding Sotrudniki.Otchestvo}"/>
+                                <DataGridTextColumn Header="Максимальный оклад" Binding="{Binding Max}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <StackPanel Orientation="Horizontal" Grid.Row="1">
+                            <Button x:Name="Find2" Content="Найти" Margin="5" Height="30" Width="150" Background="#FFF4F6FF" Foreground="#DD000000" BorderBrush="#FF9FA0EA" Click="Find2_Click" />
+                            <Button x:Name="Back5" Content="Назад" Margin="5" Height="30" Width="150" Background="#FFF4F6FF" Foreground="#DD000000" BorderBrush="#FF9FA0EA" Click="Back5_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem x:Name="z6">
+            <TabItem.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Height="10" Width="10" Fill="Black" />
+                    <TextBlock Margin="3">Сотрудник с максимальным окладом за весь период</TextBlock>
+                </StackPanel>
+            </TabItem.Header>
+            <TabItem.Content>
+                <StackPanel>
+                    <Label Content="Label" x:Name="label" FontSize="18" />
+                    <StackPanel Orientation="Horizontal" Grid.Row="1">
+                        <Button x:Name="Back6" Content="Назад" Margin="5" Height="30" Width="150" Background="#FFF4F6FF" Foreground="#DD000000" BorderBrush="#FF9FA0EA" Click="Back6_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem.Content>
+        </TabItem>
+        <TabItem x:Name="z7">
+            <TabItem.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Height="10" Width="10" Fill="Black" />
+                    <TextBlock Margin="3">Количество сотрудников на каждой должности</TextBlock>
+                </StackPanel>
+            </TabItem.Header>
+            <TabItem.Content>
+                <StackPanel>
+                    <DataGrid x:Name="p7" Loaded="p7_Loaded" AutoGenerateColumns="False" IsReadOnly="True" Margin="10">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Должность" Binding="{Binding Dolgnosty.nazvanie}"/>
+                            <DataGridTextColumn Header="Количество сотрудников" Binding="{Binding Count}"/>
+                        </DataGrid.Columns>
+                        </DataGrid>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1">
+                        <Button x:Name="Back7" Content="Назад" Margin="5" Height="30" Width="150" Background="#FFF4F6FF" Foreground="#DD000000" BorderBrush="#FF9FA0EA" Click="Back7_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem.Content>
+        </TabItem>
+    </TabControl>
+</Page>

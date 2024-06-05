@@ -1,0 +1,102 @@
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.AssemblyReference.cache
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.SuggestedBindingRedirects.cache
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\MainWindow.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\App.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол_MarkupCompile.cache
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол_MarkupCompile.lref
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\Лабораторные 11.01 Колосова.mdf
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\Лабораторные 11.01 Колосова_log.ldf
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\11.01 Кол.exe.config
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\11.01 Кол.exe
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\11.01 Кол.pdb
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\EntityFramework.dll
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\EntityFramework.xml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\MainPage.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол_Content.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\MainPage.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\MainWindow.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.g.resources
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\_11._01_Кол.Properties.Resources.resources
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.GenerateResource.cache
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.CopyComplete
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.exe
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.pdb
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TableDolgnosti.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TableOplata.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TablePoochreniya.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TableSotrudniki.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TableUchet.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TableDolgnosti.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TableOplata.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TablePoochreniya.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TableSotrudniki.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\TableUchet.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddDolgnosti.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddOplata.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddPoochreniya.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddSotrudniki.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddUchet.g.cs
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddDolgnosti.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddOplata.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddPoochreniya.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddSotrudniki.baml
+C:\Users\student\source\repos\11.01 Кол\11.01 Кол\obj\Debug\AddUchet.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.AssemblyReference.cache
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddDolgnosti.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddOplata.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddPoochreniya.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddSotrudniki.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddUchet.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\MainPage.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\MainWindow.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\Poisk.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TableDolgnosti.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TableOplata.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TablePoochreniya.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TableSotrudniki.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TableUchet.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\App.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол_Content.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол_MarkupCompile.cache
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол_MarkupCompile.lref
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.exe
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.pdb
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\Лабораторные 11.01 Колосова.mdf
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\Лабораторные 11.01 Колосова_log.ldf
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\11.01 Кол.exe.config
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\11.01 Кол.exe
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\11.01 Кол.pdb
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\EntityFramework.dll
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\EntityFramework.SqlServer.dll
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\EntityFramework.xml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\EntityFramework.SqlServer.xml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\ru\EntityFramework.resources.dll
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddDolgnosti.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddOplata.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddPoochreniya.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddSotrudniki.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\AddUchet.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\MainPage.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\MainWindow.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TableDolgnosti.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TableOplata.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TablePoochreniya.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TableSotrudniki.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\TableUchet.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\Poisk.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.g.resources
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\_11._01_Кол.Properties.Resources.resources
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.GenerateResource.cache
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.CoreCompileInputs.cache
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.CopyComplete
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\11.01 Кол.csproj.SuggestedBindingRedirects.cache
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\Proc.g.cs
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\obj\Debug\Proc.baml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\BouncyCastle.Crypto.dll
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\itextsharp.dll
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\itextsharp.xml
+D:\Моё\МДК 11.01\11.01 Кол\11.01 Кол\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
